@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>花彪(runoob.com)</title>
+</head>
+<body>
+
+<h2>常用网站</h2>
+<p id="demo"></p>
+<script>
+var text = '{ "sites" : [' +
+	'{ "name":"weibo" , "url":"www.weibo.com" },' +
+	'{ "name":"youku" , "url":"www.youku.com" },' +
+	'{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+	
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.sites[2].name + " " + obj.sites[2].url;
+</script>
+
+</body>
+</html>
