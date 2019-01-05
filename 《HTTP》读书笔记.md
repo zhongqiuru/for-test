@@ -10,7 +10,10 @@
 - 数据链路层（用来处理连接网络的硬件部分。包括控制操作系统、硬件的设备驱动、NIC（*Network Interface Card，网络适配器，即网卡*），及光纤等物理可见部分（*还包括连接器等一切传输媒介*）。硬件上的范畴均在链路层的作用范围之内。）
 
 #### TCP/IP 通信传输流
+
 ![image](https://wx1.sinaimg.cn/mw690/b040101agy1fyw4eobal4j20jg0f5ace.jpg)
+
+
 利用 TCP/IP 协议族进行网络通信时，会通过分层顺序与对方进行通信。发送端从应用层往下走，接收端则往应用层往上走。
 
 应用层（HTTP协议）发出一个想看某个 Web 页面的 HTTP 请求。
@@ -136,18 +139,18 @@ HTTP 协议自身不具备保存之前发送过的请求或响应的功能。
 |Authorization|Web认证信息|
 |Expect|期待服务器的特定行为 |
 |From 	| 用户的电子邮箱地址 |
-|Host |	 请求资源所在服务器 
-|If-Match |	 比较实体标记（ETag） 
-|If-Modified-Since |比较资源的更新时间
-|If-None-Match 	| 比较实体标记（与 If-Match 相反） 
-|If-Range |	 资源未更新时发送实体 Byte 的范围请求 
- |If-Unmodified-Since |比较资源的更新时间（与If-Modified-Since相反）	 |比较资源的更新时间（与If-Modified-Since相反） 
- |Max-Forwards 	| 最大传输逐跳数 
- |Proxy-Authorization |	 代理服务器要求客户端的认证信息 
- |Range |	 实体的字节范围请求 
- |Referer |	 对请求中 URI 的原始获取方 
- |TE |	 传输编码的优先级 
-|User-Agent |	 HTTP 客户端程序的信息
+|Host |	 请求资源所在服务器| 
+|If-Match |	 比较实体标记（ETag） |
+|If-Modified-Since |比较资源的更新时间|
+|If-None-Match 	| 比较实体标记（与 If-Match 相反） |
+|If-Range |	 资源未更新时发送实体 Byte 的范围请求 |
+|If-Unmodified-Since |比较资源的更新时间（与If-Modified-Since相反） |
+ |Max-Forwards 	| 最大传输逐跳数|
+ |Proxy-Authorization |	 代理服务器要求客户端的认证信息 |
+ |Range |	 实体的字节范围请求|
+ |Referer |	 对请求中 URI 的原始获取方| 
+ |TE |传输编码的优先级|
+|User-Agent |	 HTTP 客户端程序的信息|
 
 #### 请求首部字段
 **Accept**:首部字段可通知服务器，用户代理能够处理的媒体类型及媒体类型的相对优先级。可使用 type/subtype 这种形式，一次指定多种媒体类型。
